@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-$pdo = new PDO("mysql:dbname=clinica;host=127.0.0.1:3307", "root", "");
+$pdo = new PDO("mysql:dbname=clinica;host=127.0.0.1:3306", "root", "");
 
 $accion=(isset($_GET['accion']))?$_GET['accion']:'leer';
 switch($accion){
